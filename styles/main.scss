@@ -1,0 +1,21 @@
+@import 'mixins';
+@import 'variables';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 100vh;
+    @include flex(row, center, center);
+    
+    .columns{
+        width:50vw;
+        @include flex(row,center,center); 
+
+        .column{
+
+        }
+    }
+}
