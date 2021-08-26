@@ -48,7 +48,7 @@ footer{
         }
 
         .column{
-            height: 467px;
+            height: 500px;
             width: calc(100%/3);
             box-sizing: border-box;
             padding: 42px;
@@ -88,6 +88,7 @@ footer{
             }
             .columnText{
                 letter-spacing: 1.5px;
+                line-height: 25px;
             }
         }
     }
