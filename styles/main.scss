@@ -1,21 +1,94 @@
 @import 'mixins';
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 
 body{
     margin: 0;
     padding: 0;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: $textGray;
+    font-weight: 400;
 }
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    color: #222;
+    text-align: center;
+    padding: 10px;
+    background-color: $mainGray;
+    font-weight: 800;
+
+    a, a:active{
+        color: $greenColumn;
+        text-decoration: none;
+
+    }
+    
+    }
 
 .content{
     height: 100vh;
     @include flex(row, center, center);
+    background-color: $mainGray;
     
     .columns{
-        width:50vw;
-        @include flex(row,center,center); 
+        width:1000px;
+        @include flex(row,center,center);
+        border-radius: 5px;
+
+        @media(max-width:990px){
+            max-width:330px;
+            @include flex(column, center, center);
+        }
 
         .column{
+            height: 467px;
+            width: calc(100%/3);
+            box-sizing: border-box;
+            padding: 42px;
 
+            @media(max-width:990px){
+                width: 100%;
+            }
+
+            &.sedans{
+                background-color: $orangeColumn;
+                .columnButton{
+                    @include button($orangeColumn);
+                }
+            }
+            &.suvs{
+                background-color: $blueColumn;
+                .columnButton{
+                    @include button($blueColumn);
+                }
+            }
+            &.luxury{
+                background-color: $greenColumn;
+                .columnButton{
+                    @include button($greenColumn);
+                }
+            }
+            .columnIcon{
+                margin-bottom: 40px;
+            }
+            .columnTitle{
+                text-transform: uppercase;
+                font-family: 'Big Shoulders Display';
+                font-weight: 700;
+                font-size: 40px;
+                letter-spacing: 1.5px;
+                margin-bottom: 40px;
+            }
+            .columnText{
+                letter-spacing: 1.5px;
+            }
         }
     }
 }
