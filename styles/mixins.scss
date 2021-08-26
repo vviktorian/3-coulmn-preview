@@ -1,0 +1,24 @@
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin button($textColor){
+    border: 3px solid $mainGray;
+    border-radius: 50px;
+    color: $textColor;
+    background-color: $mainGray;
+    width: 130px;
+    height: 35px;
+    @include flex(row, center, center);
+    margin-top: 75px;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+
+    &:hover{
+        color: $mainGray;
+        background-color: transparent;
+    }
+}

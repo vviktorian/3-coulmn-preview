@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  color: #222;
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  font-weight: 800;
+}
+
+footer a, footer a:active {
+  color: #004241;
+  text-decoration: none;
+}
+
+.content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f2f2f2;
+}
+
+.content .columns {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 5px;
+}
+
+@media (max-width: 990px) {
+  .content .columns {
+    max-width: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.content .columns .column {
+  height: 467px;
+  width: calc(100%/3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 42px;
+}
+
+@media (max-width: 990px) {
+  .content .columns .column {
+    width: 100%;
+  }
+}
+
+.content .columns .column.sedans {
+  background-color: #e38826;
+}
+
+.content .columns .column.sedans .columnButton {
+  border: 3px solid #f2f2f2;
+  border-radius: 50px;
+  color: #e38826;
+  background-color: #f2f2f2;
+  width: 130px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 75px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.content .columns .column.sedans .columnButton:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.content .columns .column.suvs {
+  background-color: #00706e;
+}
+
+.content .columns .column.suvs .columnButton {
+  border: 3px solid #f2f2f2;
+  border-radius: 50px;
+  color: #00706e;
+  background-color: #f2f2f2;
+  width: 130px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 75px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.content .columns .column.suvs .columnButton:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.content .columns .column.luxury {
+  background-color: #004241;
+}
+
+.content .columns .column.luxury .columnButton {
+  border: 3px solid #f2f2f2;
+  border-radius: 50px;
+  color: #004241;
+  background-color: #f2f2f2;
+  width: 130px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 75px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.content .columns .column.luxury .columnButton:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.content .columns .column .columnIcon {
+  margin-bottom: 40px;
+}
+
+.content .columns .column .columnTitle {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+
+.content .columns .column .columnText {
+  letter-spacing: 1.5px;
+}
+/*# sourceMappingURL=main.css.map */
