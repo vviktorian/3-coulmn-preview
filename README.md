@@ -27,8 +27,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Solution URL](https://www.frontendmentor.io/solutions/3column-preview-card-component-but-using-scss-9o0WLXU0T)
+
+[Live Site URL](https://vviktorian.github.io/3-coulmn-preview/)
 
 ## Built with
 
